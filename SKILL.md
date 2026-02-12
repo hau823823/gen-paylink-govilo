@@ -6,6 +6,10 @@ description: >
   (2) Automating file upload to Govilo R2 storage with presigned URLs,
   (3) Managing Govilo Bot API interactions (presign → upload → create item).
   Requires GOVILO_API_KEY env var. If missing, guides user to register at https://govilo.xyz/.
+metadata:
+  author: hau823823@gmail.com
+  version: "1.0"
+  {"openclaw":{"requires":{"env":["GOVILO_API_KEY","SELLER_ADDRESS"]},"primaryEnv":"GOVILO_API_KEY","homepage":"https://govilo.xyz/"}}
 ---
 
 # Govilo To Go
@@ -20,9 +24,11 @@ Always ask the user for these values before executing the CLI — never guess or
 
 ## CLI Command
 
+Run from this skill's base directory. The `.env` file must be at the user's project root.
+
 ```bash
-cd skills/govilo-to-go
-uv run --env-file ../../.env create-link \
+cd <skill_base_directory>
+uv run --env-file <project_root>/.env create-link \
   --input <path>         \
   --title "Product Name" \
   --price "5.00"         \
