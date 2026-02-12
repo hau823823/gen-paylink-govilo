@@ -1,5 +1,5 @@
 ---
-name: govilo-to-go
+name: gen-paylink-govilo
 description: >
   Upload files to Govilo and generate unlock links via Bot API. Use when:
   (1) Creating a Govilo unlock link from a ZIP, folder, or individual files,
