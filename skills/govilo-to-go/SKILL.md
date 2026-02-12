@@ -21,8 +21,8 @@ Always ask the user for these values before executing the CLI — never guess or
 ## CLI Command
 
 ```bash
-cd skills/govilo-to-go
-uv run --env-file ../../.env create-link \
+cd .claude/skills/govilo-to-go
+uv run --env-file ../../../.env create-link \
   --input <path>         \
   --title "Product Name" \
   --price "5.00"         \
